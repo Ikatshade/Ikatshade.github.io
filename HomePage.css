@@ -11,7 +11,7 @@ body{
 
 }
 .inner-content{
-    overflow: visible;
+    overflow-y: visible;
     width: 100%;
     display: flex;
     align-items: center;
@@ -142,8 +142,6 @@ header{
     display: flex;
     justify-content: space-between;
     width: 91%;
-
-
 }
 .textpart{
 
@@ -230,38 +228,197 @@ img{
 }
 
 .cards_div{
+
     margin: 2% 0;
     height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    
 }
-.card{
+.cards_carousel{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    align-items: center;
+
+  }
+.cards{
+    width: 120vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.cardm{
+    margin: 0 .5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    width: 450px;
-    height: 450px;
+    width: 465px;
+    height: 470px;
     background-color: #ffffff;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+
+}
+.cardc{
+    margin: 0 .5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 425px;
+    height: 430px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+
+}
+.cardlc{
+    margin: 0 .5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 385px;
+    height: 390px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 
 }
 .in-content{
-    background-color: blueviolet;
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.icon{
+.iconm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+   
+}
+.iconc{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80px;
     height: 80px;
-    border-radius: 40px;
+    border-radius: 50px;
+}
+.iconlc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+}
+
+#c1{
+    background: linear-gradient(to left, #F69556, #F47B36);
+}
+#c2{
+    background: linear-gradient(to left, #00ABB3, rgba(0, 88, 90, .78));
+}
+#c3{
     background: linear-gradient(to left, #47b5ff, rgba(33, 70, 199, .66));
+}
+#c4{
+    background: linear-gradient(to left, rgba(92, 192, 102, .60), rgba(0, 171, 112, .66));
+}
+#c5{
+    background: linear-gradient(to left, #C6EEA4, rgba(92, 192, 102, .66));
+}
+.rest{
+    height: 42.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.ttl1 span{
+    font-weight: 400;
+    font-family: 'montserrat';
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.ttl2 span{
+    font-weight: 400;
+    font-family: 'montserrat';
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.ttl3 span{
+    font-weight: 500;
+    font-family: 'montserrat';
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.ttl4 span{
+    font-weight: 400;
+    font-family: 'montserrat';
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.ttl5 span{
+    font-weight: 400;
+    font-family: 'montserrat';
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.corp1{
+    font-family: 'montserrat';
+    text-align: center;
+    font-weight: 200;
+    color: #b2b2b2;
+    font-size: 12px;
+}
+.corp2{
+    font-family: 'montserrat';
+    text-align: center;
+    font-weight: 300;
+    color: #b2b2b2;
+    font-size: 15px;
+}
+.corp3{
+    font-family: 'montserrat';
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 18px;
+}
+.corp4{
+    font-family: 'montserrat';
+    font-weight: 300;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 15px;
+}
+.corp5{
+    font-family: 'montserrat';
+    text-align: center;
+    font-weight: 200;
+    color: #b2b2b2;
+    font-size: 12px;
+}
+.drager{
+    font-size: 40px;
+    padding-top: 50px;
+    color: #545454;
 }
 .title h3{ 
     font-size: 58px;
