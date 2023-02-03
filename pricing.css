@@ -103,6 +103,13 @@ header{
     padding:12px 32px;
     border-radius: 14px;
 }
+.menu a:hover{
+    color: #545454;
+}
+.active{
+    color: #545454;
+
+}
 .btn:hover{
     border:rgba(100, 67, 255, .36) 2px solid;
     padding:12px 32px;

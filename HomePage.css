@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding:0;
@@ -17,6 +21,9 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
+/*******************************************NAVBAR***********************************************/
+
 header{
     background-color: #f6f6f6;
     position: sticky;
@@ -85,6 +92,15 @@ header{
     padding: 6%;
     text-transform: capitalize;
 }
+.menu a:hover{
+    color: #545454;
+}
+.active{
+    color: #545454;
+
+}
+
+
 .SignButton{
     display: flex;
     justify-content: space-between;
@@ -123,6 +139,9 @@ header{
 .j{
     padding-left: 10px;
 }
+
+/*******************************************BODY***********************************************/
+
 .body{
     display: flex;
     flex-direction: column;
@@ -226,19 +245,30 @@ img{
     font-size: 50px;
     color: #b2b2b2;
 }
-
+/**********************************************CAROUSEL********************************************/
 .cards_div{
 
-    margin: 2% 0;
+    margin: 4% 0;
     height: 70vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     
 }
+
+.cards_div span{ 
+    padding-bottom: 80px;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: 'montserrat';
+
+}
 .cards_carousel{
     width: 100vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,49 +278,29 @@ img{
   }
 .cards{
     width: 120vw;
+    height: 100%;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
 }
 
-
+input[type=radio] {
+    display: none;
+}
+.card{
+    position: absolute;
+}
 .cardm{
-    margin: 0 .5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    width: 465px;
-    height: 470px;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-
-}
-.cardc{
-    margin: 0 .5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    width: 425px;
-    height: 430px;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-
-}
-.cardlc{
-    margin: 0 .5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    width: 385px;
-    height: 390px;
+    width: 485px;
+    height: 490px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 
@@ -312,22 +322,7 @@ img{
     border-radius: 60px;
    
 }
-.iconc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
-}
-.iconlc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 50px;
-}
+
 
 #c1{
     background: linear-gradient(to left, #F69556, #F47B36);
@@ -351,70 +346,49 @@ img{
     justify-content: space-between;
     align-items: center;
 }
-.ttl1 span{
-    font-weight: 400;
-    font-family: 'montserrat';
-    font-size: 30px;
-    text-transform: capitalize;
-}
-.ttl2 span{
-    font-weight: 400;
-    font-family: 'montserrat';
-    font-size: 35px;
-    text-transform: capitalize;
-}
-.ttl3 span{
+
+.ttl span{
     font-weight: 500;
     font-family: 'montserrat';
     font-size: 40px;
     text-transform: capitalize;
 }
-.ttl4 span{
-    font-weight: 400;
-    font-family: 'montserrat';
-    font-size: 35px;
-    text-transform: capitalize;
-}
-.ttl5 span{
-    font-weight: 400;
-    font-family: 'montserrat';
-    font-size: 30px;
-    text-transform: capitalize;
-}
-.corp1{
-    font-family: 'montserrat';
-    text-align: center;
-    font-weight: 200;
-    color: #b2b2b2;
-    font-size: 12px;
-}
-.corp2{
-    font-family: 'montserrat';
-    text-align: center;
-    font-weight: 300;
-    color: #b2b2b2;
-    font-size: 15px;
-}
-.corp3{
+
+
+.corp{
     font-family: 'montserrat';
     text-align: center;
     color: #b2b2b2;
     font-size: 18px;
 }
-.corp4{
-    font-family: 'montserrat';
-    font-weight: 300;
-    text-align: center;
-    color: #b2b2b2;
-    font-size: 15px;
-}
-.corp5{
-    font-family: 'montserrat';
-    text-align: center;
-    font-weight: 200;
-    color: #b2b2b2;
-    font-size: 12px;
-}
+
+#item-1:checked ~ .cards #song-4, #item-2:checked ~ .cards #song-5 ,#item-3:checked ~ .cards #song-1 ,#item-4:checked ~ .cards #song-2, #item-5:checked ~ .cards #song-3 {
+    transform: translatex(-190%) scale(.75);
+    opacity: .2;
+    z-index: 0;
+  }
+  #item-1:checked ~ .cards #song-5, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2, #item-4:checked ~ .cards #song-3, #item-5:checked ~ .cards #song-4{
+    transform: translatex(-100%) scale(.85);
+    opacity: .4;
+    z-index: 0;
+  }
+  
+  #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-4, #item-4:checked ~ .cards #song-5, #item-5:checked ~ .cards #song-1 {
+    transform: translatex(100%) scale(.85);
+    opacity: .4;
+    z-index: 0;
+  }
+  #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-4, #item-3:checked ~ .cards #song-5, #item-4:checked ~ .cards #song-1, #item-5:checked ~ .cards #song-2 {
+    transform: translatex(190%) scale(.75);
+    opacity: .2;
+    z-index: 0;
+  }
+  
+  #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3, #item-4:checked ~ .cards #song-4, #item-5:checked ~ .cards #song-5 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 0;
+  }  
 .drager{
     font-size: 40px;
     padding-top: 50px;
@@ -424,6 +398,8 @@ img{
     font-size: 58px;
     font-family: 'montserrat';
 }
+/**********************************************FOOTER********************************************/
+
 footer{
     display: flex;
     justify-content: space-between;

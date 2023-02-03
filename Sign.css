@@ -5,9 +5,25 @@ body{
 }
 
 .container{
-    overflow-y: hidden;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(100, 67, 255, .2);
+    perspective: 10000000px;
+
+    
+}
+.card-content{
+    display: flex;
 }
 .logo{
     color:#6443FF ;
@@ -29,12 +45,13 @@ body{
     border: #6443FF 1px solid;
 }
 .inner_content{
+    width:75vw;
     display: flex;
     align-items: center;
 }
 .img_part{
-    height: 100vh;
-    flex-basis:60%;
+    height:80vh;
+    flex-basis: 58%;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, .09);
     background-image: url("/images/carinsu.png");
     background-position: center;
@@ -42,7 +59,7 @@ body{
 }
 
 .form_part{
-    flex-basis: 40%;
+    flex-basis: 42%;
     display: flex;
     height: 80vh;
     justify-content: space-evenly;
@@ -54,7 +71,7 @@ body{
     font-family: "nunito sans";
     flex-direction: column;
     flex-basis: 50%;
-    width: 60%;
+    width: 70%;
     color: #525252;
     justify-content: center;
     align-items: center;
@@ -62,9 +79,10 @@ body{
 }
 .header{
     flex-direction: column;
-    height: 70px;
-    width:75%;
+    height: 80px;
+    width:79%;
     display: flex;
+    align-items: flex-start;
     padding-bottom: 20px;
     text-align: left;
 }

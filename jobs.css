@@ -99,6 +99,13 @@ header{
     text-decoration: none;
     color: black;
 }
+.menu a:hover{
+    color: #545454;
+}
+.active{
+    color: #545454;
+
+}
 .btn{
     border:rgba(178, 178, 178, .46) 2px solid;
     padding:12px 32px;

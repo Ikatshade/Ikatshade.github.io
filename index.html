@@ -14,6 +14,7 @@
 <body>
 <div class="container">
     <div class="inner-content">
+      <!-----------------------------------------HEADER(NAVBAR)------------------------------------------->
         <header>
             <div class="header-content">
                 <div class="rightpart">
@@ -25,7 +26,7 @@
                         <div class="line"></div>
                     </div>
                     <div class="menu">
-                        <a href="index.html"><span class="menubutton">Home</span></a>
+                        <a href="index.html"><span class="menubutton active">Home</span></a>
                         <a href=""><span class="menubutton services">services 
                             <iconify-icon icon="mdi:chevron-down" style="font-size: 18px;"></iconify-icon>
                         </span></a>
@@ -42,6 +43,9 @@
             </div>
         </header>
 
+              <!-----------------------------------------BODY------------------------------------------->
+
+
         <div class="body">
             <div class="center_div">
                 <div class="center-content">
@@ -55,7 +59,7 @@
                             no more need to worry about your car, we will cover your costs if your car is damaged in an accident, stolen, vandalised or catches fire.
                         </div>
                         <div class="buttons">
-                            <a href=""class="bt">
+                            <a href="#card"class="bt" >
                                 <span class="discover">
                                     discover
                                     <iconify-icon icon="mdi:arrow-top-right"></iconify-icon>
@@ -83,119 +87,155 @@
                 </div>
             </div>
     
-            <div class="cards_div">
+            <div class="cards_div" id="card">
+              <span>
+                Why we are better than others
+              </span>
                 <div class="cards_carousel">
+                  <input type="radio" name="slider" id="item-1" checked>
+                  <input type="radio" name="slider" id="item-2">
+                  <input type="radio" name="slider" id="item-3">
+                  <input type="radio" name="slider" id="item-4">
+                  <input type="radio" name="slider" id="item-5">
                   <div class="cards">
-                    <div class="cardlc card">
-                      <div class="in-content" id="content1">
-                        <div class="iconlc" id="c1">
-                          <iconify-icon
-                            icon="ant-design:dollar-circle-filled"
-                            style="color: white; font-size: 30px"
-                          ></iconify-icon>
-                        </div>
-                        <div class="rest">
-                          <div class="ttl1">
-                            <span>best value, cheapest price</span>
+
+                    <label class="card" for="item-1" id="song-1">
+
+                      <div class="cardm">
+                        <div class="in-content" id="content1">
+                          <div class="iconm" id="c3">
+                            <iconify-icon
+                              icon="mingcute:safety-certificate-fill"
+                              style="color: white; font-size: 70px"
+                            ></iconify-icon>
                           </div>
-                          <div class="corp1">
-                            <p>
-                            We offer a variety of packages and services to help you find the perfect fit for you budget
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cardc card">
-                      <div class="in-content" id="content1">
-                        <div class="iconc" id="c2">
-                          <iconify-icon
-                            icon="ant-design:like-filled"
-                            style="color: white; font-size: 50px"
-                          ></iconify-icon>
-                        </div>
-                        <div class="rest">
-                          <div class="ttl2">
-                            <span>5+ years experience</span>
-                          </div>
-                          <div class="corp2">
-                            <p>
-                            In here we will ensure that you will have an experience that you never experienced before
-                            </p>
+                          <div class="rest">
+                            <div class="ttl">
+                              <span>certified platform</span>
+                            </div>
+                            <div class="corp">
+                              <p>
+                                In 5 years we already helped countless companies and
+                                individuals with our car insurance and become a certified
+                                platform
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="cardm card">
-                      <div class="in-content" id="content1">
-                        <div class="iconm" id="c3">
-                          <iconify-icon
-                            icon="mingcute:safety-certificate-fill"
-                            style="color: white; font-size: 70px"
-                          ></iconify-icon>
-                        </div>
-                        <div class="rest">
-                          <div class="ttl3">
-                            <span>certified platform</span>
+            
+                    </label>
+
+                    <label class="card" for="item-2" id="song-2">
+
+                      <div class="cardm">
+                        <div class="in-content" id="content1">
+                          <div class="iconm" id="c4">
+                            <iconify-icon
+                              icon="bi:bag-plus-fill"
+                              style="color: white; font-size: 65px"
+                            ></iconify-icon>
                           </div>
-                          <div class="corp3">
-                            <p>
-                              In 5 years we already helped countless companies and
-                              individuals with our car insurance and become a certified
-                              platform
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cardc card">
-                      <div class="in-content" id="content1">
-                        <div class="iconc" id="c4">
-                          <iconify-icon
-                            icon="bi:bag-plus-fill"
-                            style="color: white; font-size: 45px"
-                          ></iconify-icon>
-                        </div>
-                        <div class="rest">
-                          <div class="ttl4">
-                            <span>24/7 service</span>
-                          </div>
-                          <div class="corp4">
-                            <p>
-                            Need help for your insurance? No Worries cause we are 24/7 at your service
-                            </p>
+                          <div class="rest">
+                            <div class="ttl">
+                              <span>24/7 service</span>
+                            </div>
+                            <div class="corp">
+                              <p>
+                              Need help for your insurance? No Worries cause we are 24/7 at your service
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="cardlc card">
-                      <div class="in-content" id="content1">
-                        <div class="iconlc" id="c5">
-                          <iconify-icon
-                            icon="material-symbols:cloud-done"
-                            style="color: white; font-size: 35px"
-                          ></iconify-icon>
-                        </div>
-                        <div class="rest">
-                          <div class="ttl5">
-                            <span>plan your future</span>
+            
+                    </label>
+
+                    <label class="card" for="item-3" id="song-3">
+
+                      <div class="cardm">
+                        <div class="in-content" id="content1">
+                          <div class="iconm" id="c5">
+                            <iconify-icon
+                              icon="material-symbols:cloud-done"
+                              style="color: white; font-size: 70px"
+                            ></iconify-icon>
                           </div>
-                          <div class="corp5">
-                            <p>
-                            The packages we offer will help you make savings help increase income and decrease your expenses.         
-                            </p>
+                          <div class="rest">
+                            <div class="ttl">
+                              <span>plan your future</span>
+                            </div>
+                            <div class="corp">
+                              <p>
+                              The packages we offer will help you make savings help increase income and decrease your expenses.         
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+            
+                    </label>
+
+                    <label class="card" for="item-4" id="song-4">
+
+                      <div class="cardm">
+                        <div class="in-content" id="content1">
+                          <div class="iconm" id="c1">
+                            <iconify-icon
+                              icon="ant-design:dollar-circle-filled"
+                              style="color: white; font-size: 70px"
+                            ></iconify-icon>
+                          </div>
+                          <div class="rest">
+                            <div class="ttl">
+                              <span>best value, cheapest price</span>
+                            </div>
+                            <div class="corp">
+                              <p>
+                              We offer a variety of packages and services to help you find the perfect fit for you budget
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </label>
+                    <label class="card" for="item-5" id="song-5">
+            
+                      <div class="cardm">
+                        <div class="in-content" id="content1">
+                          <div class="iconm" id="c2">
+                            <iconify-icon
+                              icon="ant-design:like-filled"
+                              style="color: white; font-size: 70px"
+                            ></iconify-icon>
+                          </div>
+                          <div class="rest">
+                            <div class="ttl">
+                              <span>5+ years experience</span>
+                            </div>
+                            <div class="corp">
+                              <p>
+                              In here we will ensure that you will have an experience that you never experienced before
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            
+                    </label>
                   </div>
+
                   <div class="drager">
-                      <iconify-icon icon="material-symbols:arrow-back" onclick="slideleft()"></iconify-icon> 
-                      <iconify-icon icon="material-symbols:arrow-forward-rounded" onclick="slideright()"></iconify-icon>  
+                    <iconify-icon icon="material-symbols:arrow-back" onclick="slideback()"></iconify-icon> 
+                    <iconify-icon icon="material-symbols:arrow-forward-rounded" onclick="slide()"></iconify-icon>  
                   </div>
                 </div>
               </div>
         </div>
+
+        <!---------------------------------------------footer---------------------------------------------->
+
         <footer>
             
             <div class="footer-content">
@@ -259,21 +299,55 @@
 </div>
 
 <script>
-    var arr = ['content1', 'content2', 'content3', 'content4', 'content5']
-    function slideright(){
-        let element = document.getElementById(arr[4]).innerHTML
-        for (let index = 0; index < arr.length; index++) {
-            document.getElementById(arr[index]).innerHTML = document.getElementById(arr[index + 1]);
-        }
-        document.getElementById(arr[0]) = let
-    }
-    function slideleft(){
-        let element = document.getElementById(arr[0]).innerHTML
-        for (let index = arr.length - 1; index <= 0; index--) {
-            document.getElementById(arr[index]).innerHTML = document.getElementById(arr[index + 1]);
-        }
-        document.getElementById(arr[4]) = let
-    }
+  const arr = ["#item-1", "#item-2", "#item-3", "#item-4", "#item-5"]
+
+  function slide() {
+      arr.forEach(element => { 
+          const el = document.querySelector (element);
+          if (el.checked == true) { 
+              console.log(el.checked, element);
+              check = arr.indexOf(element)
+
+          }
+  });
+      console.log(check)
+      old = document.querySelector(arr[check])
+      if (check < 4) {
+          onew = document.querySelector(arr[check + 1])
+
+      }
+      else {
+          onew = document.querySelector(arr[0])
+      }
+          old.checked = false
+          onew.checked = true
+      
+  }
+ 
+  function slideback() {
+      arr.forEach(element => { 
+          const el = document.querySelector (element);
+          if (el.checked == true) { 
+              console.log(el.checked, element);
+              check = arr.indexOf(element)
+
+          }
+  });
+      console.log(check)
+      old = document.querySelector(arr[check])
+      if (check > 0) {
+          onew = document.querySelector(arr[check - 1])
+
+      }
+      else {
+          onew = document.querySelector(arr[4])
+      }
+          old.checked = false
+          onew.checked = true
+      
+  }
+ 
+
 </script>
 </body>
 </html>
